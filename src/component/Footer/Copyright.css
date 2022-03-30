@@ -1,0 +1,30 @@
+.copyright {
+    padding: 25px;
+}
+.copyright_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copyright_container > p {
+    color: gray;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1.1px;
+}
+.company_footer {
+    color: red;
+}
+.under_footer {
+    background-image: linear-gradient(to right top, #a80000, #b3000d, #bf0018, #ca0023, #d5002e, #da0033, #de0037, #e3003c, #e3003c, #e3003c, #e3003c, #e3003c);
+    height: 3px;
+    width: 100%;
+    border-radius: 3px;
+    margin: 16px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+    .copyright_container > p {
+       text-align: center;
+    }
+}

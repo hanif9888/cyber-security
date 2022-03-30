@@ -1,0 +1,103 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 100000;
+}
+.header.scroll {
+    box-shadow: 0px 4px 18px 1px rgb(0 0 0 / 10%),
+		0px 4px 5px 0px rgb(0 0 0 / 8%), 0px 1px 10px 0px rgb(0 0 0 / 9%);
+}
+.logo > img{
+    width: 60px;
+    height: 60px;
+}
+.list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.list > li > a{
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 25px;
+    text-decoration: none;
+    color: #000;
+}
+.list > li > a:hover {
+    color: red;
+    cursor: pointer;
+}
+.dhoka > button{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 25px;  
+    background-color: red;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 200px;
+}
+.dhoka > button:hover {
+    border: 2px solid red;
+    background-color: #fff;
+    color: red;
+    transition: all 1s ease;
+}
+.menu_icon {
+    display: none;
+}
+
+
+@media only screen and (max-width: 991px) {
+    .list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 65px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    margin-right: 0px;
+    }
+    .list.active {
+    background-color: #fff;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1000;
+    }
+    .list_item {
+        margin-bottom: 2rem;
+    }
+    .list_item a {
+        font-size: 100px;
+    }
+    .links {
+        font-size: 120px;
+    }
+    .menu_icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-20%, 35%);
+        font-size: 1.8rem;
+        cursor: pointer;
+        margin-right: 5px;
+        color: #000;
+      }
+      .dhoka > button {
+          display: flex;
+          flex-direction: column;
+          margin-left: 0px;
+      }
+}

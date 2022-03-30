@@ -1,0 +1,55 @@
+.hero {
+    background: url(https://lakhankumarenterprises.netlify.app/images/gdpr.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+}
+.content_hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 400px;
+    text-align: center;
+}
+.content_hero > h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+.hero_btn{
+    padding: 10px 15px;
+    border: 2px solid red;
+    width: 40%;
+    border-radius: 25px;
+    margin-top: 25px;
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+}
+.hero_btn:hover {
+    background-color: red;
+    color: #fff;
+    border-radius: 25px;
+    transition: all 0.7s ease-in;
+} 
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        margin: 0.1px;
+    }
+    .content_hero {
+        max-width: 300px;
+    }
+    .content_hero > h3 {
+        font-size: 20px;
+    }
+    .hero_btn{
+        padding: 10px;
+        width: 50%;
+    }
+}

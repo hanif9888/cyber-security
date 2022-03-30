@@ -1,0 +1,22 @@
+.call{
+    position: fixed;
+    left: 10px;
+    bottom: 50px;
+    padding: 15px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 50%;
+}
+.call a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+}
+@media only screen and (max-width: 991px) {
+    .call{
+        width: 15%;
+    }
+}
